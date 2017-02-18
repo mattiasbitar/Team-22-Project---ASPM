@@ -1,4 +1,6 @@
 <?php
+	session_start();
+
 	
 	include 'DBhandler.php';
 	
@@ -10,3 +12,5 @@
 	$result = $conn->query($sql);
 	
 	header("Location: index.php");
+	
+?>

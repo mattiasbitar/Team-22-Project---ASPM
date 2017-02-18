@@ -1,3 +1,8 @@
+<?php
+	session_start();
+	
+?>
+
 <!DOCTYPE html>
 <html>
 	<head>
@@ -12,6 +17,15 @@
 			<button type"submit">LOGIN</button>
 		</form>
 		
+		<?php
+			if (isset($_SESSION['userName'])) {
+				echo $_SESSION['userName'];
+			}else{
+				echo "You have to loggin";
+			}
+		
+		?>
+		
 		<br><br>
 		
 		<form action="signup.php" method="POST"> <!--Gömd pga password annars använd GET-->
@@ -20,6 +34,12 @@
 			<button type"submit">SIGN UP</button>
 		</form>
 		
+		<br><br>
+		
+		<form action="logout.php">
+			<button>LOG OUT</button>
+			
+		</form>
 		
 	</body>
 </html>

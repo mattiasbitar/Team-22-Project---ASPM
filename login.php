@@ -1,5 +1,6 @@
 <?php
-	
+	session_start();
+
 	include 'DBhandler.php';
 	
 	$userName = $_POST['userName'];
@@ -13,7 +14,9 @@
 		echo "The username or password is wrong!";
 	}
 	else {
-		echo "Logged In!";
+		$_SESSION['userName'] = $row['userName'];
 	}
 	
-	header("Location: index.php");
+	header("Location: index.php")
+	
+?>
