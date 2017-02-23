@@ -1,0 +1,72 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+ <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">  
+<script type="text/javascript"> 
+ function setViewSize() {  
+            //计算屏幕大小  
+            var w=window.innerWidth  
+            || document.documentElement.clientWidth  
+            || document.body.clientWidth;  
+            var h=window.innerHeight  
+            || document.documentElement.clientHeight  
+            || document.body.clientHeight;  
+            //设置登陆div的位置  
+            marginLeft = (w-468)/2;  
+            marginTop = (h-262)/2;  
+            document.getElementById("loginFormMain").style.marginLeft=marginLeft;  
+            document.getElementById("loginFormMain").style.marginTop=marginTop;  
+        }  
+ function focusOnMoviename() {  
+            //调整画布大小和登陆框位置  
+            setViewSize();  
+            //默认聚焦在输入框上  
+            if (document.MNForm) {  
+                var movienameInput = document.MNForm.moviename;  
+                if (movienameInput) {  
+                    movienameInput.focus();  
+                }  
+            }  
+            return;  
+        } 
+	 function checkInput(){  
+            if(checkMInput() ){  
+                 return true;  
+             }          
+            return false;  
+        } 
+	function checkMInput(){  
+            var moviename = document.MNForm.moviename;  
+            if(moviename.value.length!=0){  
+                return true;  
+            }else{  
+                alert("Enter something");  
+                return false;  
+            }  
+        }  
+</script>
+</head>
+
+<body background="stars.jpg" onload="javascript:focusOnMoviename();" style="background-size:cover" >  
+     <form  action="success.html" name="MNForm" >  
+     <div  id="loginFormMain">  
+         <table  style="width: 468px; height: 262px;  text-align: center; color: #FFF;">  
+              <tr>  
+                 <th colspan="2" align="center" ><h1>Add Movie</h1></th>  
+              </tr>  
+              <tr>  
+                  <td><li>Movie Name:</li><input type="text" style="width: 200px;height: 30px;"  name="moviename"></td> 
+                  <td rowspan="2"><li><a href="#">Add img</a></li>                    <img width="66" height="70" /></td> 
+              </tr>  
+              <tr>  
+                  <td><li>Description:</li><textarea style="width: 200px;height: 30px;"  name="text2">write in here</textarea></td>
+              </tr>  
+              <tr>  
+                  <td align="center" ><input  formmethod="post" type="submit" style="cursor: pointer;font-style: inherit;" name="submit"  onclick="return checkInput();" value="Save" >   
+                      <input type="reset"  style="cursor: pointer;" name=reset  value="Reset"></td>  
+              </tr>  
+         </table>  
+     </div>  
+      </form>  
+</body>  
+</html>  
