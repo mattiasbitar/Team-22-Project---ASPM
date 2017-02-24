@@ -1,0 +1,245 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" 
+  href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+
+  <script language="javascript">
+  function openwin(){
+  window.open("add2.html","height=100px, width=200px,  scrollbars=yes")}
+  </script> 
+   <style>
+            .bggrade{
+                display: inline-block;
+                width: 93px;
+                height: 16px;
+                background: url(bggrade.png);
+            }
+            .star{
+                display: inline-block;
+                left: 0;
+                top: 0;
+                background: url(stargrade.png);
+                width: 0;
+                height: 16px;
+            }
+        </style>
+  <style>
+.container{
+	
+	color:white;
+	border:#FF9;
+	
+	background-size:cover;
+	}
+.btn1 {
+	font-family: Arial, Helvetica, sans-serif;
+	background: #FFC;
+	height: auto;
+	width: auto;
+	font-size: 16px;
+	color:#000;
+}
+  </style>
+</head>
+
+<body background="bgblue.jpg" style="background-size:auto; background-size:cover ">
+
+<div class="container" >
+
+<div class="jumbotron" style="background:url(bg3.png);background-size:cover; color:#FFF">
+  <h1>Movies Information</h1> 
+  <p>These are movies we have</p>
+  <button class="btn1" style="align: center; text-align: center; margin:auto" onclick="openwin()"><b>AddMovie</b></button>
+<button class="btn1" style="align: center; text-align: center;"><b>delete</b></button> 
+</div>
+</div>
+
+<div class="container" style="background:url(bg3.png);background-position:bottom;">
+<div class="row">
+  <div class="col-md-4" style="background:scroll; height:auto" >
+    <table style="font-family:Georgia, 'Times New Roman', Times, serif; margin-top:auto" width="100%", bordercolorlight="#FFFFCC"  >
+      <tr>
+        <td width="48" colspan="2" rowspan="4"><img src="A Man Called Ove.jpg" width="84" height="125" style="align=center" ></td>
+        <td colspan="2" ><h3 align="center"> A Man Called Ove</h3></td>
+      </tr>
+      <tr><td align="center">publish date:</td>
+      	<td align="center">25 December 2015 (Sweden)</td>
+      </tr>
+      <tr>
+      <td align="center">Movie type:</td>
+      <td align="center">Comedy, Drama</td>
+      </tr>
+      <tr>
+      <td align="center">grade:</td>
+      <td><span class="bggrade">
+            <span class="star" id="star"></span>
+        </span>
+
+        <script>
+            var star = document.getElementById("star");
+            star.style.width = "70%";
+        </script></td>
+      </tr>
+      <tr>
+        <td colspan="4"><p>Ove, an ill-tempered, isolated retiree who spends his days enforcing block association rules and visiting his wife's grave, an unlikely friendship develops with his neighbor</p></td>
+      </tr>
+    </table>
+  </div>
+  
+  <div class="col-md-4"style="background:scroll ;">
+<table style="font-family:Georgia, 'Times New Roman', Times, serif; margin-top:auto" width="100%", bordercolorlight="#FFFFCC"  >
+      <tr>
+        <td width="48" colspan="2" rowspan="4"><img src="lalaland.jpg" width="84" height="125" style="align=center" ></td>
+        <td colspan="2" ><h3 align="center" style="color:#FF0"> La La Land</h3></td>
+      </tr>
+      <tr><td align="center">publish date:</td>
+      	<td align="center">14 February 2017 (China)</td>
+      </tr>
+      <tr>
+      <td align="center">Movie type:</td>
+      <td align="center">Comedy, Drama, Musical</td>
+      </tr>
+      <tr>
+      <td align="center">grade:</td>
+      <td><span class="bggrade">
+            <span class="star" id="star1"></span>
+        </span>
+
+        <script>
+            var star1 = document.getElementById("star1");
+            star1.style.width = "90%";
+        </script></td>
+      </tr>
+<tr>
+        <td colspan="5"><p>A jazz pianist falls for an aspiring actress in Los Angeles.</p></td>
+      </tr></table>
+  </div>
+  
+  
+<div class="col-md-4" style="background:scroll ;">
+  <table style="font-family:Georgia, 'Times New Roman', Times, serif; margin-top:auto" width="100%", bordercolorlight="#FFFFCC"  >
+      <tr>
+        <td width="48" colspan="2" rowspan="4"><img src="FIfty Shades Darker.jpg" width="84" height="125" style="align=center" ></td>
+        <td colspan="2" ><h3 align="center">Fifty Shades Darker</h3></td>
+      </tr>
+      <tr><td align="center">publish date:</td>
+      	<td align="center">10 February 2017 (Sweden)</td>
+      </tr>
+      <tr>
+      <td align="center">Movie type:</td>
+      <td align="center">Drama, Romance</td>
+      </tr>
+      <tr>
+      <td align="center">grade:</td>
+      <td><span class="bggrade">
+            <span class="star" id="star2"></span>
+        </span>
+
+        <script>
+            var star2 = document.getElementById("star2");
+            star2.style.width = "50%";
+        </script></td>
+      </tr>
+<tr>
+        <td colspan="5"><p>While Christian wrestles with his inner demons, Anastasia must confront the anger and envy of the women who came before her.</p></td>
+      </tr></table>
+</div>
+<div class="col-md-4"style="background:scroll ;">
+  <table style="font-family:Georgia, 'Times New Roman', Times, serif; margin-top:auto" width="100%", bordercolorlight="#FFFFCC"  >
+      <tr>
+        <td width="48" colspan="2" rowspan="4"><img src="the great wall.jpg" width="84" height="125" style="align=center" ></td>
+        <td colspan="2" ><h3 align="center">The Great Wall</h3></td>
+      </tr>
+      <tr><td align="center">publish date:</td>
+      	<td align="center">16 December 2016 (China)</td>
+      </tr>
+      <tr>
+      <td align="center">Movie type:</td>
+      <td align="center">Action, Adventure, Fantasy </td>
+      </tr>
+      <tr>
+      <td align="center">grade:</td>
+      <td><span class="bggrade">
+            <span class="star" id="star3"></span>
+        </span>
+
+        <script>
+            var star3 = document.getElementById("star3");
+            star3.style.width = "65%";
+        </script></td>
+      </tr>
+<tr>
+        <td colspan="5"><p>European mercenaries searching for black powder become embroiled in the defense of the Great Wall of China against a horde of monstrous creatures.</p></td>
+      </tr>
+      </table>
+  </div>
+
+   <div class="col-md-4" style="background:scroll ;">  
+  <table style="font-family:Georgia, 'Times New Roman', Times, serif; margin-top:auto" width="100%", bordercolorlight="#FFFFCC"  >
+      <tr>
+        <td width="48" colspan="2" rowspan="4"><img src="Moana.jpg" width="84" height="125" style="align=center" ></td>
+        <td colspan="2" ><h3 align="center" style="color:#FF0">Moana in Disney</h3></td>
+      </tr>
+      <tr><td align="center">publish date:</td>
+      	<td align="center"> 25 November 2016 (China)</td>
+      </tr>
+      <tr>
+      <td align="center">Movie type:</td>
+      <td align="center">Animation, Adventure, Comedy</td>
+      </tr>
+      <tr>
+      <td align="center">grade:</td>
+      <td><span class="bggrade">
+            <span class="star" id="star4"></span>
+        </span>
+
+        <script>
+            var star4 = document.getElementById("star4");
+            star4.style.width = "80%";
+        </script></td>
+      </tr>
+<tr>
+        <td colspan="5"><p>In Ancient Polynesia, when a terrible curse incurred by the Demigod Maui reaches an impetuous Chieftain's daughter's island, she answers the Ocean's call to seek out the Demigod to set things right.</p></td>
+      </tr></table>
+  </div>
+  
+  
+  <div class="col-md-4" style="background:scroll ;">
+  <table style="font-family:Georgia, 'Times New Roman', Times, serif; margin-top:auto" width="100%", bordercolorlight="#FFFFCC"  >
+      <tr>
+        <td width="48" colspan="2" rowspan="4"><img src="The Light Between Oceans.jpg" width="84" height="125" style="align=center" ></td>
+        <td colspan="2" ><h3 align="center">The Light between Oceans</h3></td>
+      </tr>
+      <tr><td align="center">publish date:</td>
+      	<td align="center">2 December 2016 (Sweden)</td>
+      </tr>
+      <tr>
+      <td align="center">Movie type:</td>
+      <td align="center">Drama, Romance</td>
+      </tr>
+      <tr>
+      <td align="center">grade:</td>
+      <td><span class="bggrade">
+            <span class="star" id="star5"></span>
+        </span>
+
+        <script>
+            var star5 = document.getElementById("star5");
+            star5.style.width = "75%";
+        </script></td>
+      </tr>
+<tr>
+        <td colspan="5"><p>A lighthouse keeper and his wife living off the coast of Western Australia raise a baby they rescue from a drifting rowing boat.</p></td>
+      </tr>
+      </table>
+  </div>
+</div></div>
+
+</body>
+</html>
