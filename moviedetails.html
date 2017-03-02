@@ -1,0 +1,83 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" 
+  href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+<style>
+.bggrade{
+	  display: inline-block;
+       width: 93px;
+       height: 16px;
+                background: url(bggrade.png);
+            }
+.star{
+		  display: inline-block;
+		  left: 0;
+		  top: 0;
+		  background: url(stargrade.png);
+		  width: 0;
+		  height: 16px;
+            }
+.container{
+	
+	color:white;
+	border:#FF9;
+	
+	background-size:cover;
+	}	
+			
+        </style>
+<script>
+function open1(){
+	window.open("movieevent1.html")
+    
+	}
+	function open2(){
+	window.open("movieevent2.html")
+    
+	}
+	function open3(){
+	window.open("movieevent3.html")
+    
+	}
+</script>
+<title>Movie Details</title>
+</head>
+
+<body background="bgblue.jpg" style="background-size:auto; background-size:cover ">
+
+<div class="container" >
+<div class="jumbotron" style="background:url(bg3.png);background-size:cover; color:#FFF">
+  <h1>Movies Information</h1> 
+  <p>These are movies we have</p>
+  <table>
+  <tr>
+  <td style="margin:center">choose one check style:</td>
+  <td><select class="badge">
+  <option style=" " onclick="initials">check by initials</option>
+  <option onclick="price">check by price</option>
+  <option onclick="date">check by publish date</option>
+  </select>
+  </td>
+  </tr>
+  </table>
+</div>
+</div>
+<div class="container" style="background:url(bg3.png);background-position:bottom;">
+<p>//this part should change dynamically//</p>
+<table>
+<tr>
+  <td width="150"><div align="center">A man called ove</div>  <div align="center"><img src="A Man Called Ove.jpg" width="84" height="125" onclick="open1()" alt="a man called ove" style="cursor:pointer" /></div></td>
+  <td width="150"><div align="center"> <br />LaLaLand</div>    <div align="center"><img src="lalaland.jpg" width="84" height="125" onclick="open2()" alt="a man called ove" style="cursor:pointer" /></div></td>
+  <td width="150"><div align="center">Fifty Shades Darker</div>    <div align="center"><img src="FIfty Shades Darker.jpg" width="84" height="125" onclick="open3()" alt="a man called ove" style="cursor:pointer" /></div></td>
+</tr>
+</table>
+<div class="row">
+
+</div></div>
+</body>
+</html>
