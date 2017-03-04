@@ -64,6 +64,7 @@
 						if (isset($_SESSION['userName'])) {
 							echo "You have logged in as ";
 							echo $_SESSION['userName'];
+							?> <a style="margin-left:20px; margin-top:5px; text-decoration: none;color: white;" href="setting.php">setting</a><?php
 						}else{
 							echo "You have to login";
 						}
