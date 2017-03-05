@@ -45,13 +45,19 @@
 
  		 <ul id="nav">
  		 			<li class="top">
- 					 <a href="index.jsp" class="top_link"><span>Home</span> </a>
+ 					 <a href="index.php" class="top_link"><span>Home</span> </a>
 					</li>
 					<li class="top">
  					 <a href="AboutUs.jsp" class="top_link"><span>About Us</span> </a>
 					</li>
 					<li class="top">
  					 <a href="ContactUs.jsp" class="top_link"><span>Contact Us</span> </a>
+					</li>
+					<li class="top">
+ 					 <a href="adminControllPage.php" class="top_link"><span>Admin Page</span> </a>
+					</li>
+					<li class="top">
+ 					 <a href="locationPage.php" class="top_link"><span>Location Page</span> </a>
 					</li>
 					<li class="top">
  					 <a href="res.php" class="top_link"><span>Sign UP</span> </a>
@@ -64,7 +70,6 @@
 						if (isset($_SESSION['userName'])) {
 							echo "You have logged in as ";
 							echo $_SESSION['userName'];
-							?> <a style="margin-left:20px; margin-top:5px; text-decoration: none;color: white;" href="setting.php">setting</a><?php
 						}else{
 							echo "You have to login";
 						}
