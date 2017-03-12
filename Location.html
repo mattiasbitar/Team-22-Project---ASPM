@@ -1,6 +1,6 @@
 <!DOCTYPE HTML>
 <head>
-<title>Preview</title>
+<title>Location</title>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 <link href="css/location.css" rel="stylesheet" type="text/css" media="all"/>
@@ -37,7 +37,7 @@
 						
 							  <div class="search_box">
 					     		<form action="" method="post">
-					     			<input type="text" value="Search" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Search';}"><input type="submit" value="">
+					     			<input type="text" value="Search" onFocus="this.value = '';" onBlur="if (this.value == '') {this.value = 'Search';}"><input type="submit" value="">
 					     		</form>
 					     	</div>
 						 <div class="clear"></div>
@@ -69,9 +69,7 @@
 						  <li><span>Time:</span>&nbsp; 206 min</li>
 					    </ul>
 					</div>
-				<div class="share-desc">
-					
-				</div>
+				
 				 
 			</div>
 			<div class="clear"></div>
@@ -96,7 +94,7 @@
               <li>Cinema1</li>
               <li>Time:19:20-21:20</li>
               <li>Price:120.0 SEK</li>
-              <input class="select" type="button" value="Select seat">
+              <input class="select" type="button" value="Select seat" onClick="">
              </ul>
             <br>
 
@@ -105,7 +103,7 @@
               <li>Cinema2</li>
               <li>Time:19:20-21:20</li>
               <li>Price:120.0 SEK</li>
-              <input class="select" type="button" value="Select seat">
+              <input class="select" type="button" value="Select seat" onClick="">
              </ul>
              <br>
 
@@ -114,7 +112,7 @@
               <li>Cinema3</li>
               <li>Time:19:20-21:20</li>
               <li>Price:120.0 SEK</li>
-              <input class="select" type="button" value="Select seat">
+              <input class="select" type="button" value="Select seat" onClick="">
              </ul>
 
              <br>
@@ -124,7 +122,7 @@
               <li>Cinema4</li>
               <li>Time:19:20-21:20</li>
               <li>Price:120.0 SEK</li>
-              <input class="select" type="button" value="Select seat">
+              <input class="select" type="button" value="Select seat" onClick="">
              </ul>
 	   </div>
 
@@ -136,15 +134,29 @@
 
 
 
+ <!-- Map: every location have an unique src. 
+ To get the unique src: 1.Search place at google.cn/maps
+                        2.Click 'share' and then find it.               -->
+
+ <br> 
+  <div class="panel-body" align="left">
+    <iframe class="embed-responsive-item" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1110.8457446298564!2d15.589223035125372!3d56.16243859176331!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x2b7fa4ab29ea2e9c!2sSF+Biograf+Biostaden!5e0!3m2!1szh-CN!2sse!4v1489229250337" width="500" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+  </div>
+
+
+
+
+<!-- Top 5 movies shown in right side -->
+
    </div>
 				<div class="rightsidebar span_3_of_1 sidebar">
 					<h2>Top 5:</h2>
 					 	<div class="special_movies">
 					 	   <div class="movie_poster">
-					 		  <a href="preview.html"><img src="images/end-game.jpg" alt="" /></a>
+					 		  <a href=""><img src="images/end-game.jpg" alt="" /></a>
 					 		 </div>
 					 		   <div class="movie_desc">
-							    <h3><a href="preview.html">End Game</a></h3>
+							    <h3><a href="">End Game</a></h3>
 								   <p> &nbsp; 300 SEK</p>
 								     
 								 </div>
@@ -152,10 +164,10 @@
 					 		</div>	
 					 		<div class="special_movies">
 					 	   <div class="movie_poster">
-					 		  <a href="preview.html"><img src="images/Coraline.jpg" alt="" /></a>
+					 		  <a href=""><img src="images/Coraline.jpg" alt="" /></a>
 					 		 </div>
 					 		   <div class="movie_desc">
-							    <h3><a href="preview.html">Coraline</a></h3>
+							    <h3><a href="">Coraline</a></h3>
 								   <p> &nbsp; 300 SEK</p>
 								     
 								 </div>
@@ -163,10 +175,10 @@
 					 		</div>	
 					 		<div class="special_movies">
 					 	   <div class="movie_poster">
-					 		  <a href="preview.html"><img src="images/Eclipse.jpg" alt="" /></a>
+					 		  <a href=""><img src="images/Eclipse.jpg" alt="" /></a>
 					 		 </div>
 					 		   <div class="movie_desc">
-							    <h3><a href="preview.html">Eclipse</a></h3>
+							    <h3><a href="">Eclipse</a></h3>
 								   <p> &nbsp; 300 SEK</p>
 								     
 								 </div>
@@ -174,10 +186,10 @@
 					 		</div>	
 					 		<div class="special_movies">
 					 	   <div class="movie_poster">
-					 		  <a href="preview.html"><img src="images/Priest.jpg" alt="" /></a>
+					 		  <a href=""><img src="images/Priest.jpg" alt="" /></a>
 					 		 </div>
 					 		   <div class="movie_desc">
-							    <h3><a href="preview.html">Priest 3D</a></h3>
+							    <h3><a href="">Priest 3D</a></h3>
 								   <p> &nbsp; 300 SEK</p>
 								     
 								 </div>
@@ -185,10 +197,10 @@
 					 		</div>	
 					 		<div class="special_movies">
 					 	    <div class="movie_poster">
-					 		  <a href="preview.html"><img src="images/Sorority_Wars.jpg" alt="" /></a>
+					 		  <a href=""><img src="images/Sorority_Wars.jpg" alt="" /></a>
 					 		 </div>
 					 		   <div class="movie_desc">
-							    <h3><a href="preview.html">Sorority Wars</a></h3>
+							    <h3><a href="">Sorority Wars</a></h3>
 								   <p> &nbsp; 300 SEK</p>
 								     
 								 </div>
@@ -202,7 +214,7 @@
    	  <div class="wrap">	
 	  
 			 <div class="copy_right">
-				<p>Copyright &copy; 2017.Company name All rights reserved.</p>
+				<p>Copyright &copy; 2017. All rights reserved.</p>
 		   </div>			
         </div>
     </div>
