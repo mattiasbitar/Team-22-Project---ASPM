@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+    <head>
+         <meta charset="UTF-8">
+        <meta http-equiv="refresh" content="30">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+
+            body {background-color: tan;}
+            h1   {color: #0099CC;
+                  font-family: Lucida Calligraphy; 
+                  font-size: 40px;
+                  text-align: center;
+            }
+
+            ul {
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+                overflow: hidden;
+                background-color: lightgray;
+            }
+
+            li {
+                float: left;
+            }
+
+            li a {
+                display: block;
+                color: #003366;
+                text-align: center;
+                font-size: 20px;
+                padding: 30px 20px;
+                text-decoration: none;
+            }
+
+            li a:hover {
+                background-color: skyblue;
+            }
+
+
+            input[type=text], select {
+                width: 40%;
+                padding: 12px 5px;
+                margin: 8px 1px;
+                display: inline-block;
+                border: 1px solid #ccc;
+                border-radius: 4px;
+                box-sizing: border-box;
+            }
+
+           
+
+          
+
+          
+        </style>
+        <link rel="stylesheet" href="/lib/w3.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+
+        <div style="width: auto; height: auto; margin-top: -15px;">
+            <img src="images/poster.jpg"  width= 1350 height= 150PX;>  
+            <div style="margin-top: -3px;">      
+                <ul>
+                    <li><a href="#Home">Home</a></li>
+                    <li><a href="#Search Movies">Search Movies</a></li>
+                    <li><a href="#ContactUs">Contact Us</a></li>
+                    <li><a href="#My Profile">My Profile</a></li>
+                    <li><a href="#Change Password">Change Password</a></li>
+                    <li><a href="#SignOut">Sign Out</a></li>
+                </ul>
+            </div>
+            <h1 class="">My Profile</h1>
+
+            <div>
+                <form action="/action_page.php">
+                    <label for="Yname"><br>Your Name</br></label>
+                    <input type="text" id="Yname" name="Yourname" placeholder="Your name">
+
+                    <label for="Email id"><br>Email address</br></label>
+                    <input type="text" id="Email" name="Email" placeholder="Email address">
+
+                    <label for="mnumber"><br>Mobile Number</br></label>
+                    <input type="text" id="mnumber" name="mobile" placeholder="mobile number">
+
+                    
+
+                    
+                </form>
+            </div>
+    </body>
+</html>
