@@ -17,7 +17,8 @@ CREATE TABLE `movieEvent` (
   `event_ID` int(11) NOT NULL,
   `movieName` varchar(50) NOT NULL,
   `nrOfSeats` int(11) NOT NULL,
-  `movieDate` date NOT NULL
+  `movieDate` date NOT NULL,
+  `eventPrice` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 ALTER TABLE `movieEvent`
@@ -46,7 +47,9 @@ CREATE TABLE `UserTable` (
   `id_user` int(11) NOT NULL,
   `userName` varchar(50) NOT NULL,
   `password` varchar(50) NOT NULL,
-  `e_Mail` varchar(100) NOT NULL
+  `e_Mail` varchar(100) NOT NULL,
+  `mob` varchar(50) NOT NULL,
+  `name` varchar(50) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
   ALTER TABLE `UserTable`

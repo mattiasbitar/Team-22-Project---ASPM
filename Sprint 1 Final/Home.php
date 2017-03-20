@@ -68,7 +68,7 @@ footer {
   <li><a href="Home.php">Home</a></li>
   <li><a href="movieDetailPage.php">Search Movies</a></li>
   <li><a href="contact.php">Contact Us</a></li>
-  <li><a href="#My Profile">My Profile</a></li>
+  <li><a href="profile.php">My Profile</a></li>
   <li><a href="changepassword.php">Change Password</a></li>
   <li><a href="logout.php">Logout Out</a></li>
 </ul>

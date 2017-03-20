@@ -70,15 +70,16 @@
 				echo $_SESSION['userName'];
 			}else{
 				echo "You have to login";
+
 			}
 
 		?>
-
 		<br><br>
 		<form action="logout.php">
 			<button>LOG OUT</button>
 
 		</form>
+
 	</center>
 	</div>
 	<div style="margin-top: -3px;">
