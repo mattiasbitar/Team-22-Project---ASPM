@@ -14,7 +14,7 @@
 		<meta http-equiv="keywords" content="keyword1,keyword2,keyword3">
 		<meta http-equiv="description" content="This is my page">
 
-		<link rel="stylesheet" type="text/css" href="css/a.css">
+		<link rel="stylesheet" type="text/css" href="css/a1.css">
 
 
 
@@ -48,16 +48,10 @@
  					 <a href="index.php" class="top_link"><span>Home</span> </a>
 					</li>
 					<li class="top">
- 					 <a href="AboutUs.jsp" class="top_link"><span>About Us</span> </a>
-					</li>
-					<li class="top">
- 					 <a href="ContactUs.jsp" class="top_link"><span>Contact Us</span> </a>
-					</li>
-					<li class="top">
  					 <a href="adminControllPage.php" class="top_link"><span>Admin Page</span> </a>
 					</li>
 					<li class="top">
- 					 <a href="locationPage.php" class="top_link"><span>Location Page</span> </a>
+ 					 <a href="locationPage.html" class="top_link"><span>Location Page</span> </a>
 					</li>
 					<li class="top">
  					 <a href="res.php" class="top_link"><span>Sign UP</span> </a>
@@ -67,6 +61,12 @@
 						 </a>
 					</li>
 					<?php
+						$url = "http://".$_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI'];
+						if (strpos($url, 'sign=success') !== false){ //Checks for a string positon
+							echo "Signup Successful - ";
+}
+					?>
+					<?php
 						if (isset($_SESSION['userName'])) {
 							echo "You have logged in as ";
 							echo $_SESSION['userName'];
@@ -74,7 +74,8 @@
 							echo "You have to login";
 						}
 
-					?>
+?>
+
 		</ul>
 
 

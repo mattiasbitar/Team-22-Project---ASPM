@@ -111,14 +111,15 @@
 								<tr>
 									<td>
 										<p>
-											User Name :
+											Name :
 										</p>
 									</td>
 									<td>
-										<input type="text" name="uname" id="uname" class="input_text"
+										<input type="name" name="name" id="name" class="input_text"
 											value="" required="">
-										<label id="msguname"
+										<label id="msgemail"
 											style="color: red; font-size: 16px; font-style: italic;"></label>
+
 									</td>
 								</tr>
 								<tr>
@@ -132,13 +133,13 @@
 								<tr>
 									<td>
 										<p>
-											Email :
+											E-mail :
 										</p>
 									</td>
 									<td>
 										<input type="email" name="e_Mail" id="email" class="input_text"
 											value="" required="">
-										<label id="msgemail"
+										<label id="msgname"
 											style="color: red; font-size: 16px; font-style: italic;"></label>
 
 									</td>

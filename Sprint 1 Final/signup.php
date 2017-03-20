@@ -6,6 +6,9 @@
 	$password1 = $_POST['password1'];
 	$password2 = $_POST['password2'];
 	$e_Mail = $_POST['e_Mail'];
+	$mob = $_POST['mob'];
+	$name = $_POST['name'];
+
 
 	//Error hanteraren så att all field blir fyllda
 	if (empty($userName)){
@@ -27,6 +30,14 @@
 		header("Location: index.php?error=empty");
 		exit();
 	}
+	if (empty($mob)){
+		header("Location: index.php?error=empty");
+		exit();
+	}
+	if (empty($name)){
+		header("Location: index.php?error=empty");
+		exit();
+	}
 
 	else{
 		//Controllerar om det finns samma userName i databasen
@@ -40,7 +51,7 @@
 		else{
 
 			if($password1 == $password2){
-			$sql = "INSERT INTO UserTable(userName, password, e_Mail) VALUES ('$userName', '$password1', '$e_Mail')";
+			$sql = "INSERT INTO UserTable(userName, password, e_Mail, mob, name) VALUES ('$userName', '$password1', '$e_Mail', '$mob', '$name')";
 			$result = $conn->query($sql);
 			}
 			else{
@@ -49,7 +60,7 @@
 				exit();
 			}
 		}
-		header("Location: index.php");
+		header("Location: index.php?sign=success");
 
 	}
 

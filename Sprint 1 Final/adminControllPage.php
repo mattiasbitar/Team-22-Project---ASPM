@@ -8,7 +8,7 @@
 		$adminCheck=$_SESSION['userName'];
 
 	if (isset($_SESSION['userName']) && $adminCheck=='User01') {
-		
+
 	}
 	else{
 		echo "You have to login as a Admin for this page (!Go to Login Page and sign is as User01, Password:1234)";
