@@ -20,7 +20,7 @@
             }
 
             li {
-                float: left;
+                float: left; text-decoration:none;
             }
 
             li a {
@@ -34,6 +34,7 @@
 
             li a:hover {
                 background-color: tan;
+				text-decoration: none;
             }
 
 
@@ -70,11 +71,13 @@
         </style>
         <link rel="stylesheet" href="/lib/w3.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet"
+  href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
     </head>
 
     <body>
         <div style="width: auto; height: auto; margin-top: -15px;">
-            <img src="images/poster.jpg"  width= 1333 height="150px">
+            <img src="images/poster.jpg"  width= "100%" height="150px">
             <div style="margin-top: -3px;">
                 <ul>
                   <li><a href="Home.php">Home</a></li>
@@ -82,7 +85,7 @@
                   <li><a href="contact.php">Contact Us</a></li>
                   <li><a href="profile.php">My Profile</a></li>
                   <li><a href="changepassword.php">Change Password</a></li>
-                  <li><a href="logout.php">Logout Out</a></li>
+                  <li style="float:right;margin-right:20px"><a href="logout.php">Logout Out</a></li>
                 </ul>
             </div>
                     <h1 class="title-w3 con">Contact us</h1>
@@ -95,16 +98,17 @@
                     ?>
                   </center>
                     <div>
-                        <form action="contactInsert.php" method ="POST" enctype="multipart/form-data">
+                        <form action="contactInsert.php" method ="POST" enctype="multipart/form-data" style="width:30%;margin:0 auto;min-width:400px;border-style:solid;border-color:black;padding:10 10 10 10">
                             <label for="fname">Name</label>
                             <input type="text" id="fname" name="Name" placeholder="Your name.">
                             <label for="Ename">Email address</label>
                             <input type="text" id="Ename" name="EmailAddress" placeholder="Your Email Id..">
 
                             <span><label><br>SUBJECT</label></br></span>
-                            <span><textarea name="subject" rows="10" cols="100"> </textarea></span>
+                            <span><textarea name="subject" rows="10" style="width:100%"> </textarea></span>
                             </select>
-                            <button type="submit" name="submit">Submit</button>
+							<br><br>
+                           <center> <button type="submit" class="btn btn-primary" name="submit">Submit</button></center>
                             <!--<input type="submit" value="Submit">-->
                         </form>
                     </div>

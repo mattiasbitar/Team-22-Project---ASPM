@@ -77,12 +77,10 @@
 ?>
 
 	<body style="background:url(eventbg.jpg);  background-size:auto; background-size:cover; color:#FFF" >
-	<article style="margin-left:400px"><h3><?php echo"$movieName";?></h3></article>
-	<form action ="movieDetailPage.php">
-	<button type="submit" name="submit" class="btn btn-primary b" style="margin-left:100px">BACK</button>
-	</form>
-	<div >
-	<div class="col-md-4" style="background:scroll; height:auto; width:500px; font-size:16px;" >
+	<center><article><h3><?php echo"$movieName";?></h3></article></center>
+	
+
+	<div class="" style="background:scroll; height:300px; width:500px; font-size:16px;margin:0 auto" >
 	    <table width="100%" height="352" bordercolorlight="#FFFFCC" style="font-family:Georgia, 'Times New Roman', Times, serif; margin-top:auto",  >
 	      <tr>
 	        <td width="48" colspan="2" rowspan="3"><img src="<?php echo $row['pictureName']?>"  width="84" height="125" style="align=center" ></td>
@@ -117,7 +115,7 @@
 
 	    </table>
 	  </div>
-	  <div class="col-md-4" style="background:scroll; border: solid; height:auto; width:500px; font-size:16px">
+	  <div class="" style="background:scroll; border: solid; height:auto; width:500px; font-size:16px;margin:0 auto;margin-top:40px">
 			<h4>Dates and Seats left for this movie</h4>
 			<h5>Each date have limited amount of seats, book your movie event today!</h5>
 			<?php
@@ -161,6 +159,9 @@
 	  </tr></table>
 		<?php } ?>
 
-
+</div>
+ <form action ="movieDetailPage.php">
+	<center><button type="submit" name="submit" class="btn btn-primary b" style="margin-top:20px;">BACK</button></center>
+	</form>
 	</body>
 	</html>

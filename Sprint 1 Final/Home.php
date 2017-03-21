@@ -62,7 +62,7 @@ footer {
 
     <body>
         <div style="width: auto; height: auto; margin-top: -15px;">
-            <img src="images/poster.jpg"  width= "1335" height="150px">
+            <img src="images/poster.jpg"  width= "100%" height="150px">
             <div style="margin-top: -3px;">
 <ul>
   <li><a href="Home.php">Home</a></li>
@@ -70,7 +70,7 @@ footer {
   <li><a href="contact.php">Contact Us</a></li>
   <li><a href="profile.php">My Profile</a></li>
   <li><a href="changepassword.php">Change Password</a></li>
-  <li><a href="logout.php">Logout Out</a></li>
+  <li style="float:right;margin-right:20px"><a href="logout.php">Logout Out</a></li>
 </ul>
 </div>
             <img src="images/webimage.jpg" alt="animation" style="width:100%">

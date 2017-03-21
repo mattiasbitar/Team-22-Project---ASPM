@@ -40,7 +40,7 @@
 
     <div class="container" >
 
-      <div class="jumbotron" style="background:url(bg3.png);background-size:cover; color:#FFF">
+      <div class="jumbotron" style="background:url(bg3.png);background-size:cover; color:#FFF;width:100%;">
 				<form action ="Home.php">
 				<button type="submit" name="submit" class="btn btn-primary b">HOME</button>
 				</form>
@@ -49,9 +49,9 @@
         <!--<button class="btn1" style="align: center; text-align: center; margin:auto" onClick="openwin()"><b>AddMovie</b></button>
         <button class="btn1" style="align: center; text-align: center;"><b>delete</b></button>-->
 				<center>
-				<form action="movieProc.php" method="POST" enctype="multipart/form-data"> <!--Gömd pga password annars använd GET-->
+				<form action="movieProc.php" method="POST" enctype="multipart/form-data" style="width:40%;min-width:400px;"> <!--Gömd pga password annars använd GET-->
 
-				<select class="form-control" name="moviz" style="width: 23%; margin-left: 16px;">
+				<select class="form-control" name="moviz" style="width: 55%; margin-left: 16px;margin-top:20px;float:left">
 									<?php
 
 									$sql = "SELECT * FROM MovieTable";
@@ -67,9 +67,10 @@
 										?>
 										<input type="hidden" name="movieName" value="optz">
 
-										<button type="submit" name="submit" class="btn btn-primary b">Proceed</button>
+										
 
 									</select> <br>
+									<button type="submit" name="submit"  class="btn btn-primary b" style="float:left;margin-left:10%;">Proceed</button>
 					</form>
 				</center>
 					</div>
@@ -90,15 +91,15 @@
 
 				while ($row = $result->fetch_assoc()){
 					?>
-						<div class="col-md-4" style="background:scroll ; ">
+						<div class="col-md-4" style="background:scroll ; width:25%;margin-left:5%;">
 							<table style="font-family:Georgia, 'Times New Roman', Times, serif" width="100%", bordercolorlight="#FFFFCC" >
 <td colspan="3" ><h3 align="left"><?php echo "<p>".$row['movieName']."<p>";?></h3></td>
 								<tr>
 									<td width="48" colspan="1"><img src="<?php echo $row['pictureName']?>" width="250" height="250" ></td>
 									<!--<td colspan="3" ><h3 align="left"><?php //echo "<p>".$row['movieName']."<p>";?></h3></td>-->
 								</tr>
-								<tr>
-									<td colspan="5"><p>
+								<tr style="width:50%;">
+									<td colspan="5"><p style="">
 											<?php
 											echo "<p>Type/Genre: ".$row['movieType']."<p>";
 											echo "<p>Release Date	: ".$row['movieDate']."<p>";

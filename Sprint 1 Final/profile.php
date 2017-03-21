@@ -72,11 +72,12 @@
         <link rel="stylesheet" href="/lib/w3.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 				<link rel="stylesheet1"href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+				
 	  </head>
     <body>
 
         <div style="width: auto; height: auto; margin-top: -15px;">
-            <img src="images/poster.jpg"  width= 1350 height= 150PX;>
+            <img src="images/poster.jpg"  width= "100%" height= 150PX;>
             <div style="margin-top: -3px;">
                 <ul>
                   <li><a href="Home.php">Home</a></li>
@@ -84,7 +85,7 @@
                   <li><a href="contact.php">Contact Us</a></li>
                   <li><a href="profile.php">My Profile</a></li>
                   <li><a href="changepassword.php">Change Password</a></li>
-                  <li><a href="logout.php">Logout Out</a></li>
+                  <li style="float:right;margin-right:20px"><a href="logout.php">Logout Out</a></li>
                 </ul>
             </div>
             <h1 class="">My Profile - <?php echo $userName;?></h1>
@@ -99,7 +100,7 @@
                 <form action="/action_page.php">
 
                     <label for="Yname"><br>Your Name</br></label>
-                    <input type="text" id="Yname" name="Yourname" placeholder="<?php echo $row['name'];?>">
+                    <input type="text" id="Yname" name="Yourname" placeholder="<?php echo $row['userName'];?>">
 
                     <label for="Email id"><br>Email address</br></label>
                     <input type="text" id="Email" name="Email" placeholder="<?php echo $row['e_Mail'];?>">
@@ -171,7 +172,7 @@ while ($row2 = $result2->fetch_assoc()){
 					    <div align="justify"><?php echo "<p>".$row2['nrOfSeatsBuy']." <p>";?> </div></td>
 					  </tr>
 					  <tr>
-					  <td colspan="2" align="center"><form action="contact.php" ><button type ="submit" style="color:black">Contact us to Cancel</button></form></td>
+					  <td colspan="2" align="center"><form action="contact.php" ><button type ="submit"  style="color:black;width:150px;height:30px;font-size:12px;margin-top:10px;">Contact us to Cancel</button></form></td>
 					  </tr></table>
 <?php } ?>
 
